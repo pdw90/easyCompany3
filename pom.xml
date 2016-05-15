@@ -285,7 +285,13 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-pmd-plugin</artifactId>
-                    <version>3.1</version>
+                    <configuration>
+                        <rulesets>
+                            <!-- ruleset>/rulesets/java/braces.xml</ruleset>
+                            <ruleset>/rulesets/java/naming.xml</ruleset  -->
+                            <ruleset>file:///${project.basedir}/pmd-ruleset.xml</ruleset>
+                        </rulesets>
+                    </configuration>
                 </plugin>
             </plugins>
         </pluginManagement>
@@ -295,8 +301,8 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <configuration>
-                    <skipTests>true</skipTests>
-                    <forkMode>once</forkMode>
+                    <skipTests>false</skipTests>
+                    <forkMode>always</forkMode>
                     <reportFormat>xml</reportFormat>
                     <excludes>
                         <exclude>**/Abstract*.java</exclude>
