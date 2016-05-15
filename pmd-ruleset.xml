@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ruleset name="egovframework-pmd-5.3.2"
+    xmlns="http://pmd.sourceforge.netruleset/2.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://pmd.sourceforge.netruleset/2.0.0 http://pmd.sourceforge.netruleset_2_0_0.xsd">
+  <description>
+    전자정부 표준프레임워크에서 권고하는 39개 룰셋을 담은 내용(PMD 5.3 용)
+    작성 by 임성현
+  </description>
+
+  <rule ref="rulesets/java/empty.xml/EmptyCatchBlock"/>
+  <rule ref="rulesets/java/empty.xml/EmptyIfStmt"/>
+  <rule ref="rulesets/java/empty.xml/EmptyWhileStmt"/>  
+  <rule ref="rulesets/java/empty.xml/EmptyTryBlock"/>
+  <rule ref="rulesets/java/empty.xml/EmptyFinallyBlock"/>
+  <rule ref="rulesets/java/unnecessary.xml/UnnecessaryConversionTemporary"/>
+  <rule ref="rulesets/java/empty.xml/EmptyStatementNotInLoop"/>
+  <rule ref="rulesets/java/braces.xml/WhileLoopsMustUseBraces"/>   
+  <rule ref="rulesets/java/controversial.xml/AssignmentInOperand"/>   
+  <rule ref="rulesets/java/controversial.xml/UnnecessaryParentheses"/> 
+
+  <rule ref="rulesets/java/design.xml/SimplifyBooleanExpressions"/>   
+  <rule ref="rulesets/java/design.xml/SwitchStmtsShouldHaveDefault"/>   
+  <rule ref="rulesets/java/design.xml/AvoidReassigningParameters"/>   
+  <rule ref="rulesets/java/design.xml/FinalFieldCouldBeStatic"/>   
+  <rule ref="rulesets/java/design.xml/EqualsNull"/>   
+  <rule ref="rulesets/java/design.xml/SimpleDateFormatNeedsLocale"/>   
+  <rule ref="rulesets/java/design.xml/ImmutableField"/>   
+  <rule ref="rulesets/java/design.xml/AssignmentToNonFinalStatic"/>   
+  <rule ref="rulesets/java/design.xml/AvoidSynchronizedAtMethodLevel"/>   
+  <rule ref="rulesets/java/design.xml/AbstractClassWithoutAbstractMethod"/>   
+
+  <rule ref="rulesets/java/design.xml/UncommentedEmptyMethod"/>   <!-- deprecated -->
+  <rule ref="rulesets/java/design.xml/AvoidConstantsInterface"/>   
+  <rule ref="rulesets/java/imports.xml/DuplicateImports"/>   
+  <rule ref="rulesets/java/imports.xml/ImportFromSamePackage"/>   
+  <rule ref="rulesets/java/logging-java.xml/SystemPrintln"/>   
+  <rule ref="rulesets/java/naming.xml/VariableNamingConventions"/>
+  <rule ref="rulesets/java/naming.xml/MisleadingVariableName"/>
+  <rule ref="rulesets/java/optimizations.xml/AvoidArrayLoops"/>
+  <rule ref="rulesets/java/optimizations.xml/UnnecessaryWrapperObjectCreation"/>
+  <rule ref="rulesets/java/strictexception.xml/AvoidThrowingRawExceptionTypes"/>
+
+  <rule ref="rulesets/java/strictexception.xml/AvoidThrowingNullPointerException"/>
+  <rule ref="rulesets/java/strings.xml/StringInstantiation"/>
+  <rule ref="rulesets/java/strings.xml/StringToString"/>
+  <rule ref="rulesets/java/strings.xml/InefficientStringBuffering"/>
+  <rule ref="rulesets/java/strings.xml/InefficientEmptyStringCheck"/>
+  <rule ref="rulesets/java/strings.xml/UselessStringValueOf"/>
+  <rule ref="rulesets/java/unusedcode.xml/UnusedPrivateField"/>
+  <rule ref="rulesets/java/unusedcode.xml/UnusedPrivateMethod"/>
+  <rule ref="rulesets/java/unusedcode.xml/UnusedFormalParameter"/>       
+</ruleset>
