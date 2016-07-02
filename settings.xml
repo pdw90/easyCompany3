@@ -1,0 +1,22 @@
+<!-- 이 파일을 ~/.m2/ 아래에 옮길 것-->
+<settings>
+    <pluginGroups>
+        <pluginGroup>org.sonarsource.scanner.maven</pluginGroup>
+    </pluginGroups>
+    <profiles>
+        <profile>
+            <id>sonar</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <properties>
+                <sonar.projectKey>egovframework:sample</sonar.projectKey>
+                <sonar.projectName>easyCompany3</sonar.projectName>
+                <sonar.projectVersion>1.0</sonar.projectVersion>
+                <sonar.sources>src</sonar.sources>
+                <sonar.language>java</sonar.language>
+                <sonar.sourceEncoding>UTF-8</sonar.sourceEncoding>
+            </properties>
+        </profile>
+     </profiles>
+</settings>
