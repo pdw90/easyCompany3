@@ -296,19 +296,15 @@
                 <plugin>
                     <groupId>org.codehaus.mojo</groupId>
                     <artifactId>findbugs-maven-plugin</artifactId>
-                    <version>2.5.2</version>
+                    <version>3.0.4</version>
                     <configuration>
-                        <effort>Max</effort>
-                        <threshold>Low</threshold>
-                        <maxRank>20</maxRank>
-                        <failOnError>false</failOnError>
-                        <includeFilterFile>findbugs-security-include.xml</includeFilterFile>
-                        <excludeFilterFile>findbugs-security-exclude.xml</excludeFilterFile>
+                        <includeFilterFile>file:///${project.basedir}/findbugs-security-include.xml</includeFilterFile>
+                        <excludeFilterFile>file:///${project.basedir}/findbugs-security-exclude.xml</excludeFilterFile>
                         <plugins>
                             <plugin>
                                 <groupId>com.h3xstream.findsecbugs</groupId>
                                 <artifactId>findsecbugs-plugin</artifactId>
-                                <version>1.2.0</version>
+                                <version>1.4.6</version>
                             </plugin>
                         </plugins>
                     </configuration>
