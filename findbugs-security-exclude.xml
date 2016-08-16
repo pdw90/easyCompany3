@@ -1,0 +1,22 @@
+<FindBugsFilter>
+    <Match>
+        <Package name="~spdm\.ee\.base\.esapi.*" />
+        <Bug category="SECURITY"/>
+    </Match>
+    <Match>
+        <Package name="~com\.fides.*" />
+        <Bug category="SECURITY"/>
+    </Match>
+    <Match>
+        <Package name="~org\.jtmb\.grinderAnalyzer.*" />
+        <Bug category="SECURITY"/>
+    </Match>
+    <Match>
+        <Package name="~spmd\.ee\.proxy.*" />
+        <Bug category="SECURITY"/>
+    </Match>
+    <Match>
+        <Package name="~spmd\.ee\.web.*" />
+        <Bug category="SECURITY"/>
+    </Match>
+</FindBugsFilter>

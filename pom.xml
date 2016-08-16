@@ -289,8 +289,28 @@
                         <rulesets>
                             <!-- ruleset>/rulesets/java/braces.xml</ruleset>
                             <ruleset>/rulesets/java/naming.xml</ruleset  -->
-                            <ruleset>file:///${project.basedir}/pmd-ruleset.xml</ruleset>
+                            <ruleset>file:///${project.basedir}/pmd-ruleset-92.xml</ruleset>
                         </rulesets>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>findbugs-maven-plugin</artifactId>
+                    <version>2.5.2</version>
+                    <configuration>
+                        <effort>Max</effort>
+                        <threshold>Low</threshold>
+                        <maxRank>20</maxRank>
+                        <failOnError>false</failOnError>
+                        <includeFilterFile>findbugs-security-include.xml</includeFilterFile>
+                        <excludeFilterFile>findbugs-security-exclude.xml</excludeFilterFile>
+                        <plugins>
+                            <plugin>
+                                <groupId>com.h3xstream.findsecbugs</groupId>
+                                <artifactId>findsecbugs-plugin</artifactId>
+                                <version>1.2.0</version>
+                            </plugin>
+                        </plugins>
                     </configuration>
                 </plugin>
                 <!-- sonar plugin -->
