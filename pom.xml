@@ -309,7 +309,7 @@
                         </plugins>
                     </configuration>
                 </plugin>
-                <!-- checkstyle plugin -->
+                <!-- checkstyle plugin --> 
                 <!-- 참고: http://jobcoding.net/feed/view?feedIdx=60258-->
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
