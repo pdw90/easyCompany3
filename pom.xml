@@ -2,7 +2,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>egov</groupId>
-    <artifactId>sample</artifactId>
+    <artifactId>easyCompany</artifactId>
     <packaging>war</packaging>
     <version>3.5.0</version>
     <name>test</name>
@@ -227,6 +227,12 @@
             <version>2.9.1</version>
         </dependency>
         <!-- castor end -->
+        <!-- h2 database-->
+        <dependency>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+            <version>1.4.181</version>
+        </dependency>
     </dependencies>
     <build>
         <defaultGoal>install</defaultGoal>
