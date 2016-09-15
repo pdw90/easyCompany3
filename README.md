@@ -24,3 +24,32 @@
 ##서버 실행 
 ###Tomcat에 easyCompany-3.5.0.war 파일을 옮기고 실행.
 - 계정 생성 후 접근...
+
+#로그분석
+###톰켓 억세스로그를 수집, 가공한다.
+```
+input {
+  file {
+    path => "/Users/limsunghyun/DEV/apache-tomcat-8.0.36/logs/localhost_access_log.*.txt"
+    start_position => "beginning"    
+  }
+}
+filter {
+  grok {
+     match => { "message" => "%{COMMONAPACHELOG}"}
+  }
+  date {
+     match => [ "timestamp", "dd/MMM/yyyy:HH:mm:ss Z" ]
+  }
+}
+output {
+    elasticsearch {
+      hosts => ["127.0.0.1"]
+      index => "easycompany3-2016"
+      document_type => "easycompany3"
+    }
+    stdout {
+       codec => "rubydebug"
+    }
+}
+```
