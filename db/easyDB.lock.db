@@ -1,5 +1,6 @@
 #FileLock
-#Fri Sep 16 21:20:57 KST 2016
-id=1572d632c97445cc844c330688883c9edf735e5d3ac
+#Sun Sep 18 02:37:05 KST 2016
+hostName=raspberrypi
+id=15739391598c59b61a40927015c03cacdbf4e2b648e
 method=file
-server=192.168.1.1\:52079
+server=127.0.1.1\:50000

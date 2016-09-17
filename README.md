@@ -8,13 +8,14 @@
 1. 테스트 소스 추가/ 커버리지 추가
 
 ## 환경 구성
+- Porting end : Windows, Raspberry pi, MacOSX
 ### H2 데이터베이스 세팅
 - H2 데이터베이스 다운로드(위치: http://h2database.com/html/main.html )
 - bin/ 아레에서 h2.sh 실행 (localhost:8082 로 콘솔 접근)
 - 신규 생성
 ```
   * Driver Class : org.h2.Driver
-  * JDBC : jdbc:h2:file:/Users/limsunghyun/DEV/git_clone/easyCompany3/db/easyDB;MODE=MySQL;AUTO_SERVER=TRUE
+  * JDBC : jdbc:h2:file:/home/pi/Desktop/git_clone/easyCompany3/db/easyDB;MODE=MySQL;AUTO_SERVER=TRUE
   * USER/Password : ec/ec
 ```
 - 이 때, MODE는 MySQL 호환모드로, 다른 프로세스에서 접근 허용하기 위해 AUTO_SERVER=TRUE를 지정함.
