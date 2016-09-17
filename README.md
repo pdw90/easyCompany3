@@ -32,7 +32,7 @@
 # 로그분석
 ### access로그
 - localhost_access_log.2016-09-15.txt
-```
+``` shell
 input {
   file {
     path => "/Users/limsunghyun/DEV/apache-tomcat-8.0.36/logs/localhost_access_log.*.txt"
@@ -60,7 +60,7 @@ output {
 ```
 ### catalina.out 로그
  - log4j2.conf 패턴
-```
+``` xml
 <PatternLayout pattern="%d %5p [%c] %m%n" />
 ```
 
