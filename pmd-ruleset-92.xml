@@ -4,7 +4,7 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://pmd.sourceforge.netruleset/2.0.0 http://pmd.sourceforge.netruleset_2_0_0.xsd">
   <description>
-    삼성 SDS 표준프레임워크에서 권고한 룰셋을 담은 내용(PMD 5.3 용)
+    권고 룰셋을 담은 내용(PMD 5.8.1 )
     작성 by 임성현
   </description>
    <rule ref="rulesets/java/empty.xml/EmptyCatchBlock"/>
@@ -33,7 +33,7 @@
    <rule ref="rulesets/java/design.xml/SimplifyBooleanExpressions"/>
    <rule ref="rulesets/java/design.xml/SingularField"/>
    <rule ref="rulesets/java/design.xml/SwitchStmtsShouldHaveDefault"/>
-   <rule ref="rulesets/java/design.xml/UncommentedEmptyMethod"/>
+   <rule ref="rulesets/java/design.xml/UncommentedEmptyMethodBody"/>
    <rule ref="rulesets/java/design.xml/UnnecessaryLocalBeforeReturn"/>
    <rule ref="rulesets/java/design.xml/CloseResource"/>
    <rule ref="rulesets/java/design.xml/BadComparison"/>
