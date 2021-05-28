@@ -31,8 +31,8 @@
             <snapshots>
                 <enabled>false</enabled>
             </snapshots>
-        </repository>
-    </repositories> -->
+        </repository>  -->
+    </repositories>
     <dependencies>
         <!-- 표준프레임워크 실행환경 -->
         <dependency>
