@@ -25,7 +25,6 @@
         <repository>
             <id>egovframe</id>
             <url>http://maven.egovframe.kr/maven/</url>
-            <url>http://maven.egovframe.kr:8080/maven/</url>
             <releases>
                 <enabled>true</enabled>
             </releases>
