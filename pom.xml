@@ -22,7 +22,7 @@
                 <enabled>true</enabled>
             </snapshots>
         </repository>
-        <repository>
+       <!--  <repository>
             <id>egovframe</id>
             <url>http://maven.egovframe.kr/maven/</url>
             <releases>
@@ -32,7 +32,7 @@
                 <enabled>false</enabled>
             </snapshots>
         </repository>
-    </repositories>
+    </repositories> -->
     <dependencies>
         <!-- 표준프레임워크 실행환경 -->
         <dependency>
